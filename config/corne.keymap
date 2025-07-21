@@ -33,7 +33,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans    &mt LSFT N1       &mt LCTRL N2       &mt LGUI N3       &mt LALT N4       &kp N5         &kp N6   &mt RALT N7   &mt RGUI N8 &mt RCTRL N9    &mt RSHFT N0 &trans
-   &trans &kp LS(N2) 0 &kp NUBS &kp RA(N5) &kp RA(N8) &kp LS(N8)   &kp LS(N9) &kp RA(N9) &kp RA(N6) &kp LS(NUBS) &kp LS(SLSH) &trans
+   &trans &kp LS(N2) 0 &kp NUBS &kp RA(N5) &kp RA(N8) &kp LS(N8)   &kp LS(N9) &kp RA(N9) &kp RA(N6) &kp LS(NUBS) &kp LS(FSLH) &trans
    &trans  &kp NUHS       &kp LS(NUHS)       &kp LS(DOT)       &kp RA(N7)       &kp LS(NUHS)         &kp LS(N0)   &kp LS(PLUS)   &kp LS(N7) &kp PLUS    &kp LS(N7) &trans
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
