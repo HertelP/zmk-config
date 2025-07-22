@@ -48,7 +48,7 @@
    &trans   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U &kp Z   &kp LS(COMMA)    &trans
    &trans &mt LSHFT A &mt LCTRL R &mt LGUI S &mt LALT T &kp G   &kp M &mt RALT N  &mt RGUI E     &mt RCTRL I   &mt RSHFT O &trans 
    &trans &kp X &kp C &kp D &kp V &kp Y   &kp K &kp H  &kp COMMA &kp DOT &kp MINUS &trans
-                  &lt 1 ESC &kp BSPC &kp LGUI  &kp RALT &kp SPACE &lt 2 RET 
+                  &trans &lt 1 ESC &kp BSPC &kp SPACE &lt 2 RET &kp RALT 
                         >;
                 };
                 lower_layer {
@@ -60,8 +60,9 @@
                         bindings = <
    &trans    &mt LSFT N1       &mt LCTRL N2       &mt LGUI N3       &mt LALT N4       &kp N5         &kp N6   &mt RALT N7   &mt RGUI N8 &mt RCTRL N9    &mt RSHFT N0 &trans
    &trans &kp LS(N2) &kp NUBS &kp RA(N5) &kp RA(N8) &kp LS(N8)   &kp LS(N9) &kp RA(N9) &kp RA(N6) &kp LS(NUBS) &kp LS(FSLH) &trans
-   &trans  &kp NUHS       &kp LS(NUHS)       &kp LS(DOT)       &kp RA(N7)       &kp LS(NUHS)         &kp LS(N0)   &kp LS(RBRC)   &kp LS(N7) &kp RBRC    &kp FSLH &trans
+   &trans  &kp NUHS       &kp LS(NUHS)       &kp LS(DOT)       &kp RA(N7)       &kp LS(NUHS)         &kp LS(N0)   &kp LS(RBRC)   &kp LS(N7) &kp KP_PLUS &kp FSLH &trans
                                     &trans     &trans       &trans      &kp SPACE  &kp TAB   &kp TAB
+                                    
                         >;
                 };
 
@@ -72,7 +73,7 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans  &kp SCLN &kp SCLN &kp QUOT &kp RA(N) &kp LS(EQL)   &kp GRAVE &kp LS(GRAVE)  &kp RA(RBRC) &trans &kp FSLH &trans
+   &trans  &kp SCLN &kp SCLN &kp QUOT &kp RA(N) &kp LS(EQL)   &kp GRAVE &kp LS(GRAVE)  &kp PLUS &trans &kp FSLH &trans
    &trans &kp QUOT  &trans &trans   &trans   &trans &trans  &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans
    &trans &kp LSHFT &trans   &trans &trans  &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &trans
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
