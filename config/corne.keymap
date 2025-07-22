@@ -9,13 +9,27 @@
 
 / {
         behaviors {
-            mt: mod_tap {
-                compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <2>;
-                flavor = "hold-preferred";
-                tapping-term-ms = <200>;
-                bindings = <&kp>, <&kp>;
-                display-name = "Mod-Tap";
+        hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = < ... >; 
+            hold-trigger-on-release;
+        };
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = < ... >; // List of keys on the left side of the keyboard
+            hold-trigger-on-release;
             };
         };
 
@@ -30,7 +44,7 @@
 //                    |  | ESC | BSPC |   | SPC | ENT  |  |
                         bindings = <
    &trans   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U &kp Z   &kp LS(COMMA)    &trans
-   &trans &mt LSHFT A &mt LCTRL R &mt LGUI S &mt LALT T &kp G   &kp M &mt RALT N  &mt RGUI E     &mt RCTRL I   &mt RSHFT O &trans 
+   &trans &hml LSHFT A &hml LCTRL R &hml LGUI S &hml LALT T &kp G   &kp M &hmr RALT N  &hmr RGUI E     &hmr RCTRL I   &hmr RSHFT O &trans 
    &trans &kp X &kp C &kp D &kp V &kp Y   &kp K &kp H  &kp COMMA &kp DOT &kp MINUS &trans
                   &trans &lt 1 ESC &kp BSPC &kp SPACE &lt 2 RET &kp RALT 
                         >;
@@ -57,7 +71,7 @@
 // |  |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans  &kp SCLN &kp SCLN &kp QUOT &kp RA(N) &kp LS(EQL)   &kp GRAVE &kp LS(GRAVE)  &kp LBRC &trans &kp FSLH &trans
+   &trans  &kp SCLN &kp SCLN &kp QUOT &kp RA(N) &kp LS(EQL)   &kp GRAVE &kp LS(GRAVE)  &kp LBKT &trans &kp FSLH &trans
    &trans &kp QUOT  &trans &trans   &trans   &trans &trans  &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans
    &trans &kp LSHFT &trans   &trans &trans  &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &trans
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
