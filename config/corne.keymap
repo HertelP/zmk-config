@@ -32,16 +32,9 @@
         gui_layer1_macro: gui_layer_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &macro_press LGUI
-                &mo 1
-            >;
+            bindings = <&macro_press &kp LGUI &mo 1>;
         };
         mo_gui_layer: mo_gui_layer {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <180>;
             bindings = <&gui_layer1_macro>;
         };
     };
