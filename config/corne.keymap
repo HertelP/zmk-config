@@ -29,7 +29,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-on-release;
         };
-        activate_gui_and_layer: activate_gui_and_layer {
+        gui_layer_macro: gui_layer_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; 
             bindings = <
