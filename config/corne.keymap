@@ -33,9 +33,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>; 
             bindings = <
-                &kp LGUI // Or &kp RGUI
+                &kp LGUI 
                 &mo 1
             >;
+        };
+         activate_gui_and_layer_hold_only: activate_gui_and_layer_hold_only {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>; 
+            flavor = "hold-preferred"; 
+            tapping-term-ms = <180>; 
+            bindings = <&gui_layer_macro>, <&none>;
         };
     };
 
@@ -52,7 +59,7 @@
                 &trans   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U &kp Z   &kp LS(COMMA)    &trans
                 &trans &hml LSHFT A &hml LCTRL R &hml LGUI S &hml LALT T &kp G   &kp M &hmr RALT N  &hmr RGUI E     &hmr RCTRL I   &hmr RSHFT O &trans 
                 &trans &kp X &kp C &kp D &kp V &kp Y   &kp K &kp H  &kp COMMA &kp DOT &kp MINUS &trans
-                &lt 0 activate_gui_and_layer &none 
+                &activate_gui_and_layer_hold_only 0 0
                 &lt 1 ESC 
                 &kp BSPC 
                 &kp SPACE 
