@@ -30,7 +30,7 @@
             hold-trigger-on-release;
         };
         gui_layer1_macro: gui_layer_1 {
-            compatible = "zmk, behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
                 &macro_press LGUI
