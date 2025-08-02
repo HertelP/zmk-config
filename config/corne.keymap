@@ -42,7 +42,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <180>;
-            bindings = <&gui_layer1_macro>, <&kp>;
+            bindings = <&gui_layer1_macro 0>, <&kp>;
         };
     };
 
