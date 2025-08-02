@@ -39,7 +39,6 @@
         };
         mo_gui_layer: mo_gui_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "MO_GUI_LAYER";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <180>;
