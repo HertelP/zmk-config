@@ -63,7 +63,7 @@
                 &trans   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U &kp Z   &kp LS(COMMA)    &trans
                 &trans &hml LSHFT A &hml LCTRL R &hml LGUI S &hml LALT T &kp G   &kp M &hmr RALT N  &hmr RGUI E     &hmr RCTRL I   &hmr RSHFT O &trans 
                 &trans &kp X &kp C &kp D &kp V &kp Y   &kp K &kp H  &kp COMMA &kp DOT &kp MINUS &trans
-                &lm 1 RGUI &lt 1 ESC &kp BSPC &kp SPACE &lt 2 RET &kp LCTRL B 
+                &lm 1 RGUI &lt 1 ESC &kp BSPC &kp SPACE &lt 2 RET &kp LC(B) 
             >;
         };
         lower_layer {
